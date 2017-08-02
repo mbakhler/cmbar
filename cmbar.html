@@ -1,0 +1,49 @@
+<div id="chefmod-bar" style="margin-bottom:52px;">
+	<div class="">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mp-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand" style="padding-bottom:0;padding-top:0;">
+						<div style="float:left;height:50px;margin-right:10px;">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default navbar-btn" data-toggle="dropdown"><i class="fa fa-th" aria-hidden="true"></i></button>
+								<ul class="dropdown-menu">
+									<li><a href="#" data-app-name="ordering" onclick="CmBar.openAppInNewTab(event)">Order 1-2-3</a></li>
+									<li><a href="#" data-app-name="list-management"  onclick="CmBar.openAppInNewTab(event)">List Management</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#" data-app-name="ezrecipe"  onclick="CmBar.openAppInNewTab(event)">ezRecipe</a></li>
+									<li><a href="#" data-app-name="analytics"  onclick="CmBar.openAppInNewTab(event)">Analytics</a></li>
+									<li><a href="#" data-app-name="financials"  onclick="CmBar.openAppInNewTab(event)">Financials</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#" data-app-name="reports"  onclick="CmBar.openAppInNewTab(event)">Reports</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a class="navbar-brand" href="#" style="height:20px;" onclick="CmBar.goHome()">
+						<div class="cm-logo-img">ChefMod</div>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="mp-navbar-collapse-1">
+					<button type="button" class="btn btn-default navbar-btn" style="padding:6px 12px;margin-top:8px;"><i class="fa fa-cog" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-default navbar-btn" style="padding:6px 12px;margin-top:8px;"><i class="fa fa-question" aria-hidden="true"></i></button>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default navbar-btn" style="padding:6px 12px;margin-top:8px;"  data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;<span class="txtUserFullName"></span></button>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header"><span class="txtUserFullName"></span></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#" data-app-name="reports" onclick="CmBar.signOut()">Sign Out</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
